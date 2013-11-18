@@ -1,6 +1,6 @@
 <h1> Sign In <h1>
 
-  <form action="<%= sesssion_url %>" method="post">
+  <form action="<%= session_url %>" method="post">
     <input
       name="authenticity_token"
       type="hidden"
@@ -21,4 +21,17 @@
     <br>
 
     <input type="submit" value="Log in">
+  <form>
+
+<h2> Forgot Password?
+
+  <form action="<%= session_url %>"method="post">
+    <label for="user_email">Email<label>
+      <input
+        id="user_email"
+        name="user[email]"
+        type="text">
+      <br>
+
+      <input type="submit" value="Retrieve">
   <form>
